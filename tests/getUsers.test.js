@@ -15,6 +15,7 @@ test('API Test - GET request', async ({ page }) => {
 
   const statusCode = response.status;
   expect(statusCode).toBe(200);
+  console.log('Response:', response.body); // Print the response to the console
 });
 
 

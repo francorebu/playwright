@@ -18,4 +18,5 @@ test('API Test - GET request for user', async ({ page }) => {
   expect(statusCode).toBe(200);
   expect(response.body.data.id).toBe(userId);
   expect(response.body.data.email).toBe("janet.weaver@reqres.in");
+  console.log('Response:', response.body); // Print the response to the console
 });
